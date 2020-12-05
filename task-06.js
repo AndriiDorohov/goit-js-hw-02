@@ -8,7 +8,7 @@ const totalAmount = function() {
     if (input === null) {console.log('Отменено пользователем!');
             break
         }
-    else  if (isNaN(input)) {
+    else  if ((Number.isNaN(Number.parseInt(input, 10)))) {
               console.log(`Введено ${input}`); 
               continue;
         };
