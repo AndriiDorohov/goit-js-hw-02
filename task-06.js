@@ -9,7 +9,7 @@ const totalAmount = function() {
             break
         }
     else  if ((Number.isNaN(Number.parseInt(input, 10)))) {
-              console.log(`Введено ${input}`); 
+              console.log(`Введено "${input}"`); 
               continue;
         };
         numbers.push(input)
