@@ -1,27 +1,28 @@
 const calculateEngravingPrice = function(message, pricePerWord) {
     console.log(message);
-    let i = message.split(' ');     // в эту переменную записываем массив слов разделенных пробелами
-    let j=i.length;                 // в эту переменную записываем количество элементов в массиве
-    return j*pricePerWord;
+    let words = message.split(' ');   // Split the message into an array of words
+    let wordCount = words.length;     // Get the number of elements (words) in the array
+    return wordCount * pricePerWord;
 };   
-  console.log(
+
+console.log(
     calculateEngravingPrice(
-      'Proin sociis natoque et magnis parturient montes mus',
-      10,
+        'Proin sociis natoque et magnis parturient montes mus',
+        10,
     ),
-  ); // 80
-  
-  console.log(
+); // 80
+
+console.log(
     calculateEngravingPrice(
-      'Proin sociis natoque et magnis parturient montes mus',
-      20,
+        'Proin sociis natoque et magnis parturient montes mus',
+        20,
     ),
-  ); // 160
-  
-  console.log(
+); // 160
+
+console.log(
     calculateEngravingPrice('Donec orci lectus aliquam est magnis', 40),
-  ); // 240
-  
-  console.log(
+); // 240
+
+console.log(
     calculateEngravingPrice('Donec orci lectus aliquam est magnis', 20),
-  ); // 120
+); // 120

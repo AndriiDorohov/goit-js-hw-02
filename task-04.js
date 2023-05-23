@@ -1,33 +1,27 @@
 const formatString = function(string) {
-    // твой код
     let str = '';
     
     if (string.length > 40) {
-        str = string.substr(0,40);
+        str = string.substr(0, 40);
         str += '...';
-        }
-        else {str = string} 
-     
+    } else {
+        str = string;
+    }
+    
+    return str;
+};
 
-return(str);
-  };
+/*
+ * Function calls to test its functionality
+ */
+console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
+// Returns the original string
 
-  
-  /*
-   * Вызовы функции для проверки работоспособности твоей реализации.
-   */
-  console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
-  // вернется оригинальная строка
-  
-  console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.'));
-  // вернется форматированная строка
-  
-  console.log(formatString('Curabitur ligula sapien.'));
-  // вернется оригинальная строка
-  
-  console.log(
-    formatString(
-      'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',
-    ),
-  );
-  // вернется форматированная строка
+console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.'));
+// Returns the formatted string
+
+console.log(formatString('Curabitur ligula sapien.'));
+// Returns the original string
+
+console.log(formatString('Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.'));
+// Returns the formatted string
