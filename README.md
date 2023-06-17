@@ -1,52 +1,50 @@
-**Читать на других языках: [Русский](README.md), [Українська](README.ua.md).**
+# Admission criteria
 
-# Критерии приема
+- The repository `goit-js-hw-02` has been created
+- When submitting homework, there is a link to the source files in the repository
+- Each task is executed in a separate file named `task-task_number.js`.
+  Use `<script type="module">` to close the task code in a separate
+scope and avoid identifier name conflicts.
+- The names of variables and functions are clear, descriptive
+- The code is formatted with Prettier
 
-- Создан репозиторий `goit-js-hw-02`
-- При сдаче домашней работы есть ссылка на исходные файлы в репозитории
-- Каждое задание выполнено в отдельном файле с именем `task-номер_задания.js`.
-  Используй `<script type="module">` чтобы закрыть код задания в отдельной
-  области видимости и избежать конфликтов имен идентификаторов.
-- Имена переменных и функций понятные, описательные
-- Код отформатирован с помощью Prettier
+# Task 1
 
-# Задание 1
+Write a function `logItems(array)' that gets an array and uses a loop
+`for`, which for each element of the array will output a message to the console in
+the format `[element number] - [element value]`.
 
-Напиши функцию `logItems(array)`, которая получает массив и использует цикл
-`for`, который для каждого элемента массива будет выводить в консоль сообщение в
-формате `[номер элемента] - [значение элемента]`.
+Numbering should start with `1'. For example, for the first element of the array
+`['Mango', 'Poly', 'Ajax']` with index `0` will output `1 - Mango", and for
+index `2` will output `3 - Ajax".
 
-Нумерация должна начинаться с `1`. К примеру для первого элемента массива
-`['Mango', 'Poly', 'Ajax']` с индексом `0` будет выведено `'1 - Mango'`, а для
-индекса `2` выведет `'3 - Ajax'`.
-
-```js
+``js
 const logItems = function(array) {
-  // твой код
+// your code
 };
 
 /*
- * Вызовы функции для проверки работоспособности твоей реализации.
+* Function calls to check the health of your implementation.
  */
 logItems(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']);
 
 logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
 ```
 
-# Задание 2
+# Task 2
 
-Напиши скрипт подсчета стоимости гравировки украшений. Для этого создай функцию
-`calculateEngravingPrice(message, pricePerWord)` принимающую строку (в строке
-будут только слова и пробелы) и цену гравировки одного слова, и возвращающую
-цену гравировки всех слов в строке.
+Write a script for calculating the cost of engraving jewelry. To do this, create a function
+`calculateEngravingPrice(message, pricePerWord)` that accepts a string (
+there will be only words and spaces in the string) and the price of engraving one word, and returns
+the price of engraving all words in the string.
 
-```js
+``js
 const calculateEngravingPrice = function(message, pricePerWord) {
-  // твой код
+// your code
 };
 
 /*
- * Вызовы функции для проверки работоспособности твоей реализации.
+* Function calls to check the health of your implementation.
  */
 console.log(
   calculateEngravingPrice(
@@ -71,19 +69,19 @@ console.log(
 ); // 120
 ```
 
-# Задание 3
+# Task 3
 
-Напиши фукцнию `findLongestWord(string)`, которая принимает параметром
-произвольную строку (в строке будут только слова и пробелы) и возвращает самое
-длинное слово в этой строке.
+Write the function `findLongestWord(string)`, which takes
+an arbitrary string as a parameter (there will be only words and spaces in the string) and returns the
+longest word in this string.
 
-```js
+``js
 const findLongestWord = function(string) {
-  // твой код
+// your code
 };
 
 /*
- * Вызовы функции для проверки работоспособности твоей реализации.
+ * Function calls to check the health of your implementation.
  */
 console.log(findLongestWord('The quick brown fox jumped over the lazy dog')); // 'jumped'
 
@@ -92,56 +90,56 @@ console.log(findLongestWord('Google do a roll')); // 'Google'
 console.log(findLongestWord('May the force be with you')); // 'force'
 ```
 
-# Задание 4
+# Task 4
 
-Напиши функцию `formatString(string)` которая принимает строку и форматирует ее
-если необходимо.
+Write a function `formatString(string)` that accepts a string and formats it
+if necessary.
 
-- Если длина строки не превышает `40 символов`, функция возвращает ее в исходном
-  виде.
-- Если длина больше `40 символов`, то функция обрезает строку до 40-ка символов
-  и добавляет в конец строки троеточие `'...'`, после чего возвращает
-  укороченную версию.
+- If the string length does not exceed `40 characters`, the function returns it in its original
+form.
+- If the length is more than `40 characters`, the function cuts the string to 40 characters
+  and adds a colon `..." to the end of the line, after which it returns
+  a shortened version.
 
-```js
+``js
 const formatString = function(string) {
-  // твой код
+// your code
 };
 
 /*
- * Вызовы функции для проверки работоспособности твоей реализации.
+* Function calls to check the health of your implementation.
  */
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
-// вернется оригинальная строка
+// the original string will be returned
 
-console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.'));
-// вернется форматированная строка
+console.log(formatString('Vestibulum facilitis, purus nec pulvinar iaculis.'));
+// the formatted string will be returned
 
 console.log(formatString('Curabitur ligula sapien.'));
-// вернется оригинальная строка
+// the original string will be returned
 
 console.log(
   formatString(
     'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',
-  ),
+),
 );
-// вернется форматированная строка
+// the formatted string will be returned
 ```
 
-# Задание 5
+# Task 5
 
-Напиши функцию `checkForSpam(message)`, принимающую 1 параметр `message` -
-строку. Функция проверяет ее на содержание слов `spam` и `sale`. Если нашли
-зарещенное слово то функция возвращает `true`, если запрещенных слов нет функция
-возвращает `false`. Слова в строке могут быть в произвольном регистре.
+Write a function `checkForSpam(message)` that accepts 1 parameter `message' -
+string. The function checks it for the content of the words `spam` and `sale'. If a
+forbidden word is found, the function returns `true`, if there are no forbidden words, the function
+returns `false`. Words in a string can be in any case.
 
-```js
+``js
 const checkForSpam = function(message) {
-  // твой код
+// your code
 };
 
 /*
- * Вызовы функции для проверки работоспособности твоей реализации.
+* Function calls to check the health of your implementation.
  */
 console.log(checkForSpam('Latest technology news')); // false
 
@@ -152,24 +150,24 @@ console.log(checkForSpam('Get best sale offers now!')); // true
 console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
 ```
 
-# Задание 6
+# Task 6
 
-Напиши скрипт со следующим функционалом:
+Write a script with the following functionality:
 
-- При загрузке страницы пользователю предлагается в `prompt` ввести число. Ввод
-  сохраняется в переменную `input` и добавляется в массив чисел `numbers`.
-- Операция ввода числа пользователем и сохранение в массив продолжается до тех
-  пор, пока пользователь не нажмет `Cancel` в `prompt`.
-- После того как пользователь прекратил ввод нажав `Cancel`, если массив не
-  пустой, необходимо посчитать сумму всех элементов массива и записать ее в
-  переменную `total`. Используй цикл `for` или `for...of`. После чего в консоль
-  выведи строку `'Общая сумма чисел равна [сумма]'`.
+- When loading the page, the user is prompted to enter a number in the `prompt`. Input
+  it is stored in the variable `input` and added to the array of numbers `numbers'.
+- The operation of entering a number by the user and saving it to an array continues until
+  until the user clicks `Cancel` in `prompt'.
+- After the user has stopped typing by pressing `Cancel` if the array is not
+  empty, it is necessary to calculate the sum of all the elements of the array and write it to
+  the `total` variable. Use the `for` or `for...of` loop. After that
+, output the line `The total sum of the numbers is [sum]" to the console.
 
-🔔 Делать проверку того, что пользователь ввел именно число, а не произвольный
-набор символов, не обязательно. Если хочешь, в случае некорректного ввода,
-показывай `alert` с текстом `'Было введено не число, попробуйте еще раз'`, при
-этом результат `prompt` записывать в массив чисел не нужно, после чего снова
-пользователю предлагается ввести число в `prompt`.
+🔔 It is not necessary to check that the user entered a number, and not an arbitrary
+set of characters. If you want, in case of incorrect input,
+show `alert` with the text `Not a number was entered, try again", when
+in this case, the result of `prompt` does not need to be written to an array of numbers, after which
+the user is again prompted to enter a number in `prompt`.
 
 ```js
 let input;
@@ -177,73 +175,73 @@ const numbers = [];
 let total = 0;
 ```
 
-# Задание 7 - дополнительное, выполнять не обязательно
+# Task 7 is optional, it is not necessary to perform
 
-Есть массив `logins` с логинами пользователей. Напиши скрипт добавления логина в
-массив `logins`. Добавляемый логин должен:
+There is an array of `logins` with user logins. Write a script for adding a login to
+the 'logins` array. The login to be added must:
 
-- проходить проверку на длину от 4 до 16-ти символов включительно
-- быть уникален, то есть отсутствовать в массиве `logins`
+- pass the check for a length from 4 to 16 characters inclusive
+- be unique, that is, be absent from the `logins` array
 
-Разбей задачу на подзадачи с помощью функций.
+Break the task into subtasks using functions.
 
-Напиши функцию `isLoginValid(login)`, в которой проверь количество символов
-параметра `login` и верни `true` или `false` в зависимости от того, попадает ли
-длина параметра в заданный диапазон от 4-х до 16-ти символов включительно.
+Write the function `isLoginValid(login)`, in which check the number of characters
+of the parameter `login` and return `true` or `false`, depending on whether
+the length of the parameter falls within the specified range from 4 to 16 characters inclusive.
 
-Напиши функцию `isLoginUnique(allLogins, login)`, которая принимает список всех
-логинов и добавляемый логин как параметры и проверяет наличие `login` в массиве
-`allLogins`, возвращая `true` если такого логина еще нет и `false` если логин
-уже используется.
+Write the function `isLoginUnique(allLogins, login)`, which takes a list of all
+logins and the login being added as parameters and checks for the presence of `login` in the array
+`allLogins`, returning `true` if there is no such login yet and `false` if the login
+is already in use.
 
-Напиши функцию `addLogin(allLogins, login)` которая:
+Write the function `addLogin(allLogins, login)` which:
 
-- Принимает новый логин и массив всех логинов как параметры
-- Проверяет валидность логина используя вспомогательную функцию `isLoginValid`
-- Если логин не валиден, прекратить исполнение функции `addLogin` и вернуть
-  строку `'Ошибка! Логин должен быть от 4 до 16 символов'`
-- Если логин валиден, функция `addLogin` проверяеть уникальность логина с
-  помощью функции `isLoginUnique`
-- Если `isLoginUnique` вернет `false`, тогда `addLogin` не добавляет логин в
-  массив и возвращает строку `'Такой логин уже используется!'`
-- Если `isLoginUnique` вернет `true`, `addLogin` добавляет новый логин в
-  `logins` и возвращает строку `'Логин успешно добавлен!'`
+- Accepts a new login and an array of all logins as parameters
+- Checks the validity of the login using the auxiliary function `isLoginValid`
+- If the login is not valid, stop executing the `addLogin` function and return
+  the line `Error! The login must be from 4 to 16 characters"
+- If the login is valid, the `addLogin` function checks the uniqueness of the login with
+  using the `isLoginUnique` function
+- If `isLoginUnique` returns `false`, then `addLogin` does not add the login to the
+array and returns the string `This login is already in use!'`
+- If `isLoginUnique` returns `true`, `addLogin` adds a new login to
+  `logins` and returns the string `Login successfully added!'`
 
-🔔 **Принцип единственной ответственности функции** - каждая функция делает
-что-то одно. Это позволяет переиспользовать код и изменять логику работы функции
-только в одном месте, не затрагивая работу программы в целом.
+🔔 **The principle of the sole responsibility of the function** - each function does
+one thing. This allows you to reuse the code and change the logic of the function
+only in one place, without affecting the operation of the program as a whole.
 
-Предикатные функции возвращают только `true` или `false`. Такие функции принято
-называть начиная с `is`: `isLoginUnique` и `isLoginValid` в нашем случае.
+Predicate functions return only `true` or `false'. Such functions are usually
+called starting with `is`: `isLoginUnique` and `isLoginValid' in our case.
 
-- `isLoginUnique` только проверяет есть ли такой логин в массиве и возвращает
-  `true` или `false`.
-- `isLoginValid` только проверяет валидный ли логин и возвращает `true` или
+- `isLoginUnique` only checks if there is such a login in the array and returns
+  `true` or `false'.
+- `isLoginValid` only checks if the login is valid and returns `true' or
   `false`.
-- `addLogin` добавляет или не добавляет логин в массив. При этом для проверок
-  условия добавления использует результаты вызовов других функций -
-  `isLoginUnique` и `isLoginValid`.
+- `addLogin` adds or does not add a login to the array. At the same time, it
+uses the results of calls to other functions -
+`isLoginUnique` and `isLoginValid` to check the addition condition.
 
 ```js
 const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
 
 const isLoginValid = function(login) {
-  // твой код
+// your code
 };
 
 const isLoginUnique = function(allLogins, login) {
-  // твой код
+// your code
 };
 
 const addLogin = function(allLogins, login) {
-  // твой код
+// your code
 };
 
 /*
- * Вызовы функции для проверки работоспособности твоей реализации.
+ * Function calls to check the health of your implementation.
  */
-console.log(addLogin(logins, 'Ajax')); // 'Логин успешно добавлен!'
-console.log(addLogin(logins, 'robotGoogles')); // 'Такой логин уже используется!'
-console.log(addLogin(logins, 'Zod')); // 'Ошибка! Логин должен быть от 4 до 16 символов'
-console.log(addLogin(logins, 'jqueryisextremelyfast')); // 'Ошибка! Логин должен быть от 4 до 16 символов'
-```
+console.log(addLogin(logins, 'Ajax')); // 'Login successfully added!'
+console.log(addLogin(logins, 'robotGoogles')); // 'This login is already in use!'
+console.log(addLogin(logins, 'Zod')); // 'Error! The login must be from 4 to 16 characters'
+console.log(addLogin(logins, 'jqueryisextremelyfast')); // 'Error! The login must be from 4 to 16 characters '
+``
